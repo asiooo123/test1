@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-lora), serif;
+}
+
+@layer base {
+  :root {
+    --background: 60 56% 91.2%; /* #f5f5dc - Soft Beige */
+    --foreground: 25 25% 20%; /* #403A35 - Dark Warm Brown/Grey */
+    
+    --card: 60 50% 95%; /* #F9F9F0 - Slightly lighter beige for cards */
+    --card-foreground: 25 25% 20%;
+    
+    --popover: 60 50% 95%;
+    --popover-foreground: 25 25% 20%;
+    
+    --primary: 16 68% 62.4%; /* #E07A5F - Burnt Sienna */
+    --primary-foreground: 10 70% 97%; /* #FCF6F5 - Very light, slightly warm white */
+    
+    --secondary: 30 40% 80%; /* #DACBAD - Light Muted Brown */
+    --secondary-foreground: 25 25% 25%; /* #4D453F - Darker shade for text on secondary */
+    
+    --muted: 45 40% 88%; /* #EAE9D6 - Muted Beige/Grey */
+    --muted-foreground: 30 20% 45%; /* #81776E - Softer text color */
+    
+    --accent: 30 35% 63.1%; /* #C69B7B - Muted Brown */
+    --accent-foreground: 15 50% 96%; /* #FBF6F3 - Very light, slightly warm white for accent text */
+    
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 45 30% 82%; /* #DBD8C8 - Soft border color */
+    --input: 45 35% 85%; /* #E3E1D1 - Input background */
+    --ring: 16 68% 62.4%; /* Primary color for rings */
+    
+    --chart-1: 12 76% 61%;
+    --chart-2: 173 58% 39%;
+    --chart-3: 197 37% 24%;
+    --chart-4: 43 74% 66%;
+    --chart-5: 27 87% 67%;
+    --radius: 0.5rem;
+
+    /* Sidebar colors, themed for consistency, though not heavily used by main nav */
+    --sidebar-background: 50 40% 93%; /* A slightly different beige */
+    --sidebar-foreground: 25 15% 25%;
+    --sidebar-primary: 16 68% 62.4%;
+    --sidebar-primary-foreground: 10 70% 97%;
+    --sidebar-accent: 30 35% 80%; /* Lighter version of accent for hover */
+    --sidebar-accent-foreground: 25 15% 25%;
+    --sidebar-border: 45 20% 80%;
+    --sidebar-ring: 16 68% 62.4%;
+  }
+
+  .dark {
+    /* Keeping dark mode fairly standard, can be refined later if needed */
+    --background: 25 25% 12%; /* Dark Brown/Grey */
+    --foreground: 50 40% 93%; /* Light Beige */
+
+    --card: 25 25% 15%; 
+    --card-foreground: 50 40% 93%;
+    
+    --popover: 25 25% 15%;
+    --popover-foreground: 50 40% 93%;
+    
+    --primary: 16 68% 62.4%; /* Burnt Sienna - remains vibrant */
+    --primary-foreground: 10 70% 97%;
+    
+    --secondary: 30 35% 30%; /* Darker Muted Brown */
+    --secondary-foreground: 50 40% 85%;
+    
+    --muted: 30 20% 25%;
+    --muted-foreground: 45 30% 65%;
+    
+    --accent: 30 35% 63.1%; /* Muted Brown - remains distinct */
+    --accent-foreground: 15 50% 96%;
+    
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    
+    --border: 30 20% 30%;
+    --input: 30 20% 28%;
+    --ring: 16 68% 62.4%;
+
+    --sidebar-background: 25 25% 10%;
+    --sidebar-foreground: 50 40% 93%;
+    --sidebar-primary: 16 68% 62.4%;
+    --sidebar-primary-foreground: 10 70% 97%;
+    --sidebar-accent: 30 35% 25%;
+    --sidebar-accent-foreground: 50 40% 93%;
+    --sidebar-border: 30 20% 20%;
+    --sidebar-ring: 16 68% 62.4%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground font-serif;
+  }
+}
